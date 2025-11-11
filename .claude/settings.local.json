@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:\\Users\\Administrator\\Desktop\\Docker\\vector_database\\venv\\Scripts\\python.exe\" -c \"import torch; import transformers; import docling; print(''All imports successful!''); print(''PyTorch version:'', torch.__version__); print(''Transformers version:'', transformers.__version__); print(''Docling imported successfully'')\")",
+      "Bash(\"C:\\Users\\Administrator\\Desktop\\Docker\\vector_database\\venv\\Scripts\\python.exe\" \"C:\\Users\\Administrator\\Desktop\\Docker\\vector_database\\hybrid_chunking.py\")",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(if not exist \"documents\\knowledge\" mkdir \"documents\\knowledge\")",
+      "Bash(dir:*)",
+      "Bash(=3.0.0)",
+      "Bash(nul)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

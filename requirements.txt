@@ -1,0 +1,19 @@
+# Docling and Document Processing
+docling>=2.0.0
+
+# For hybrid chunking and tokenization
+transformers>=4.30.0
+# NOTE: PyTorch must be installed separately with CPU index
+# Run: pip install torch==2.5.0+cpu torchvision==0.20.0+cpu --index-url https://download.pytorch.org/whl/cpu
+# (PyTorch 2.9.0 has Windows DLL issues, so we use 2.5.0)
+
+# For audio transcription (if using 03_audio_transcription.py)
+openai-whisper>=20231117
+hf-xet>=0.1.0
+
+# Additional dependencies
+tokenizers>=0.13.0
+sentencepiece>=0.1.99
+
+# Lightweight PDF processing (alternative to Docling for low-memory systems)
+PyPDF2>=3.0.0
